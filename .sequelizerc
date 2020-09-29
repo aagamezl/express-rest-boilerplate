@@ -1,0 +1,9 @@
+// For db:migrate use --url instead of config file
+// sequelize-cli db:migrate --url 'postgres://postgres:your_postgres_password@localhost/brodevhood'
+
+const path = require('path');
+
+module.exports = {
+  "seeders-path": path.resolve('./database/seeders'),
+  "migrations-path": path.resolve('./database/migrations')
+};
