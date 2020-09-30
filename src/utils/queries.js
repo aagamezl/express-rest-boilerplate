@@ -1,6 +1,6 @@
 const { Op } = require('sequelize')
 
-const buildAttributes = (fields) => {
+const buildAttributes = (fields = {}) => {
   return Object.entries(fields).reduce((query, [model, fields]) => {
     query[model] = fields.split(',')
 

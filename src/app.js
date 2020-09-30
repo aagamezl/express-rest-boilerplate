@@ -29,6 +29,4 @@ app.use(cors())
 // mount api v1 routes
 app.use('/v1.0', routes)
 
-// console.table(getRoutesMap(app))
-
 module.exports = app
